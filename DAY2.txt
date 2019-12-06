@@ -1,0 +1,57 @@
+SQL> SELECT SAL*6 AS ANNUAL SAL
+  2  FROM EMP;
+SELECT SAL*6 AS ANNUAL SAL
+                       *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> ED
+Wrote file afiedt.buf
+
+  1  SELECT SAL*6 AS ANNUAL_SAL
+  2* FROM EMP
+SQL> /
+
+ANNUAL_SAL                                                                                          
+----------                                                                                          
+      4800                                                                                          
+      9600                                                                                          
+      7500                                                                                          
+     17850                                                                                          
+      7500                                                                                          
+     17100                                                                                          
+     14700                                                                                          
+     18000                                                                                          
+     30000                                                                                          
+      9000                                                                                          
+      6600                                                                                          
+      5700                                                                                          
+     18000                                                                                          
+      7800                                                                                          
+
+14 rows selected.
+
+SQL> SELECT SAL*2 "ANNUAL SAL"
+  2  FROM EMP;
+
+ANNUAL SAL                                                                                          
+----------                                                                                          
+      1600                                                                                          
+      3200                                                                                          
+      2500                                                                                          
+      5950                                                                                          
+      2500                                                                                          
+      5700                                                                                          
+      4900                                                                                          
+      6000                                                                                          
+     10000                                                                                          
+      3000                                                                                          
+      2200                                                                                          
+      1900                                                                                          
+      6000                                                                                          
+      2600                                                                                          
+
+14 rows selected.
+
+SQL> EXIT
