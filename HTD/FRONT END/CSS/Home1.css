@@ -1,0 +1,29 @@
+a{
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.hi{
+    float:right;
+}
+.he{
+    float:right;
+}
+h3{
+    word-spacing: 10px;
+    text-align: left;
+}
+.li,.lii,.liii{
+    text-decoration: none;
+
+}
+img{
+    margin: 30px;
+    padding: 20px;
+    border-radius: 150px;
+    list-style: inline-block;
+    align-content: center;
+    align-items:center;
+    border: 2px solid red;
+}
