@@ -1,0 +1,19 @@
+img{
+    border: 2px solid red;
+    background-color:  green;
+    box-shadow: 0 0 12px green;
+}
+*{
+    color: hotpink;
+}
+.demo li{
+    color: lawngreen;
+    list-style:inline-block ;
+}
+.one,.two{
+    text-shadow: lightcoral;
+
+}
+#test{
+    color: mediumvioletred;
+}
