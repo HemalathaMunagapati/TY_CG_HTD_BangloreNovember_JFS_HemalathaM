@@ -1,0 +1,33 @@
+package com.caps.phone_simulatorapp.contactdao;
+
+import java.util.List;
+
+import com.caps.phone_simulatorapp.contactbean.ContactBean;
+
+public class ContactDAOImpl implements ContactDAO{
+
+	@Override
+	public List<ContactBean> getAllContacts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean addContact(String contactname) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteContact(String contactname) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean editContact(String contactname) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

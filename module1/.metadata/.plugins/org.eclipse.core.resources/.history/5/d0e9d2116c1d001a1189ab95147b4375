@@ -1,0 +1,5 @@
+package com.caps.phone_simulatorapp.factory;
+
+public class ContactFactory {
+
+}

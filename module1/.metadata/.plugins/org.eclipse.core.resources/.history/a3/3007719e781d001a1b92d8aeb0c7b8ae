@@ -1,0 +1,5 @@
+package cpm.caps.phone_simulation.contact;
+
+public class Contact_Info {
+
+}

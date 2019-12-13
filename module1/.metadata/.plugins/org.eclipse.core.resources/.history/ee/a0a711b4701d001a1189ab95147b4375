@@ -1,0 +1,28 @@
+package com.caps.phone_simulatorapp.contact_list;
+
+import java.util.Scanner;
+
+import com.caps.phone_simulatorapp.contactbean.ContactBean;
+import com.caps.phone_simulatorapp.contactdao.ContactDAO;
+import com.caps.phone_simulatorapp.factory.ContactFactory;
+
+public class Contact_Options {
+
+	public void getOptions() {
+		ContactBean bean=new ContactBean();
+		ContactDAO dao=ContactFactory.instanceOfContactDAOImpl();
+		Scanner sc=new Scanner(System.in);
+		char ch='y';
+		while(ch=='y'||ch=='y') {
+			System.out.println("Enter 1 to insert data");
+			System.out.println("Enter 2 to delete data");
+			System.out.println("Enter 3 to search data");
+			System.out.println("Enter 4 to get all data");
+			System.out.println("Enter 5 to return home:)");
+			
+			int choice=sc.nextInt();
+			switch (choice) {
+	}
+	
+
+}

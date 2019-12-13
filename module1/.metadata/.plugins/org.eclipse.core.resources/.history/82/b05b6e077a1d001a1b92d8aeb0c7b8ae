@@ -1,0 +1,30 @@
+package com.caps.phone_simulatorapp.contactservices;
+
+public class ContactServicesImpl implements ContactServices{
+	ContactDAO dao=ContactFactory.instanceOfContactDAOImpl();
+
+	@Override
+	public List<ContactBean> getAllContacts() {
+		
+		return dao.getAllContacts();
+	}
+
+	
+	@Override
+	public boolean deleteContact(String contactname) {
+		return dao.deleteContact(contactname);
+	}
+
+	@Override
+	public boolean editContact(String contactname) {
+		return dao.editContact(contactname);
+	}
+
+
+	@Override
+	public boolean addContact(ContactBean contactname) {
+		
+		return dao.addContact(contactname);
+	}
+
+}

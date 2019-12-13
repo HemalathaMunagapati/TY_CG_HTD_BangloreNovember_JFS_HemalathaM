@@ -1,0 +1,8 @@
+driverClass=com.mysql.jdbc.Driver
+dbUrl=jdbc:mysql://127.0.0.1:3306/ty_cg_nov6
+dbUser=root
+dbPassword=root
+query=select * from ContactFile
+insertQuery=insert into ContactFile values(?,?,?)
+updateQuery=UPDATE  ContactFile SET Name=? WHERE Name=? 
+deleteQuery=DELETE FROM ContactFile WHERE Name=?        

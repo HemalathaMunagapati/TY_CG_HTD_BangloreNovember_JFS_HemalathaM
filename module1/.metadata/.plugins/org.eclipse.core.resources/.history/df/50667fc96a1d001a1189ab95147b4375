@@ -1,0 +1,58 @@
+package com.caps.phone_simulatorapp.contactdao;
+
+import java.io.FileReader;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
+import java.util.Scanner;
+
+import com.caps.phone_simulatorapp.contactbean.ContactBean;
+
+public class ContactDAOImpl implements ContactDAO{
+
+	FileReader reader;
+	Properties prop;
+	ContactBean user;
+	Scanner sc=new Scanner(System.in);
+	
+	public ContactDAOImpl() {
+		try {
+
+			reader=new FileReader("db.properties");
+			prop=new Properties();
+			prop.load(reader);
+			Class.forName(prop.getProperty("driverClass"));
+			System.out.println("driver loaded");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public List<ContactBean> getAllContacts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean addContact(String contactname) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteContact(String contactname) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean editContact(String contactname) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+}
