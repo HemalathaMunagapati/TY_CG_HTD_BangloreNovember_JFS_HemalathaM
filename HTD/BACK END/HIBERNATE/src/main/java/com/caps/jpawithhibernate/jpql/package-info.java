@@ -1,0 +1,1 @@
+package com.caps.jpawithhibernate.jpql;
