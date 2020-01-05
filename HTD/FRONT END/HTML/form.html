@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="POST" novalidate>
+        <label for="sky">FIRSTNAME</label>
+        <fieldset>
+            <legend>Login Credentials</legend>
+                <input type="text" name="fname" id="sky" value="Hemalatha" readonly ><br>
+                SecondName: <input type="text" name="sname" value="Hemalatha" disabled><br>
+                FullName: <input type="text" name="sname" value="Hemalatha" placeholder="Enter full name" minlength="4" maxlength="6"><br>
+                Password:<input type="password" name="Pwd" placeholder="Enter ua pwd" required pattern="star1234" ><br>
+               
+        </fieldset>
+     gender:  <input type="radio" name="gender" value="MALE">MALE
+              <input type="radio" name="gender" value="FEMALE" checked>FEMALE <br>
+       <!-- multiple options -->
+      lang: <input type="checkbox" name="lang" value="java">Core java <br>
+            <input type="checkbox" name="lang" value="sql">sql <br>
+            <input type="checkbox" name="lang" value="web tech">web tech <br>
+            <input list="l">
+            <datalist id="l">
+                <option value="Telugu">Telugu</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </datalist> <br>
+
+    <!-- drop down -->
+       <select name="cartoons" size="2" id="">
+           <option value="Tom N Jerry">Tom n Jerry</option>
+           <option value="doreoman">doreoman</option>
+           <option value="chota bheem">chota bheem</option>
+           <option value="motu patlu">motu patlu</option>
+       </select><br>
+       <input type="date" name=""><br>
+       <input type="datetime-local" name="" id=""><br>
+       EMAIL:<input type="email" name="" id=""> <br>
+       URL:<input type="url" name="" id=""><br>
+      Num: <input type="number" name="" id="" min="10" max="40" step="2"> <br>
+       
+       <textarea name="story" id="" cols="30" rows="10">HEY...!!How are you??</textarea> <br>
+       <input type="file" name="open file" value="file"> choose file <br>
+       <input type="button" value="click here"> <br>
+       <input type="submit" value="submit"><br>
+       <input type="reset" name="" id=""><br>
+       <button>clear</button>
+
+    </form>
+</body>
+</html>
