@@ -1,0 +1,31 @@
+<div class="alert alert-danger" *ngIf='message'>{{message}}</div>
+<ul class="list-group">
+    <li *ngFor='let lateComer of lateComers' class="list-group-item"
+    [ngClass]='{
+        "list-group-item-success": lateComer.charAt(0) ==="A",
+        "list-group-item-danger": lateComer.charAt(0) !=="A"
+    }'
+    [ngStyle]='{
+        "fontSize": lateComer.length <=4 ?"25px" :"15px"
+    }'
+    >
+       
+        {{lateComer}}
+        <button class="btn btn-outline-primary float-right" (click)='deleteLateComer(lateComer)'>delete</button>
+    </li>
+</ul>
+
+<div *ngIf='10 > 7; then trueBlock else falseBlock'>
+    flag is true
+</div>
+
+<ng-template #trueBlock>
+    <h1 class="bg-success text-center">
+        This is a true block
+    </h1>
+</ng-template>
+<ng-template #falseBlock>
+    <h1 class="bg-danger text-center">
+        This is a true block
+    </h1>
+</ng-template>

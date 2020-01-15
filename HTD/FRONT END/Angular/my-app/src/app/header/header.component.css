@@ -1,0 +1,43 @@
+/* nav {
+    
+    color:plum;
+    background-color: darkturquoise;
+}
+
+li{
+    
+    float: left;
+    padding: 20px;
+    background-color:blanchedalmond;
+    color: blanchedalmond;
+        text-decoration: none;
+        list-style-type: none;
+  
+    
+}
+
+section{
+    background-repeat: no-repeat;
+}
+
+footer{
+    background-color: red;
+    text-align: end;
+    text-size-adjust: 15px;
+}
+div{
+    background-color: cornflowerblue;
+} */
+nav{
+    background:plum;
+    padding: 20px;
+    /* background-color: floralwhite; */
+}
+li{
+    list-style-type: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+}

@@ -1,0 +1,16 @@
+<h1>{{10+100}}</h1>
+<img [src]="imgURL" alt="crackers">
+<p
+    [style.background]='flag? "blue":"red"'
+    [style.color]='flag? "red": "green"'
+    [style.fontsize]='flag? "20px" :"40px"'>
+    Style Binding
+
+</p>
+<p [class.blind]="flag" [class.not-blind]="!flag"
+>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, praesentium.</p>
+<!-- <input type="text" name="myInput" #myInput> -->
+<input type="text" name="twoWayData" [(ngModel)]='twoWayData'>
+{{twoWayData}}
+<!-- <button (click)='clickMe(myInput)' class="btn btn-outline-primary">Click Me</button> -->
+<button (click)='printData()' class="btn btn-outline-primary">Click Me</button>

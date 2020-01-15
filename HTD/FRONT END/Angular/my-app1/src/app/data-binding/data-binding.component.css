@@ -1,0 +1,12 @@
+.blind{
+    background-color: chartreuse;
+    color: aliceblue;
+    padding: 20px;
+    font-size: 20;
+}
+.not-blind{
+    background: cornflowerblue;
+    color: aquamarine;
+    padding: 20px;
+    font-size: 40;
+}
